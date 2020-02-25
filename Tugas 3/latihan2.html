@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<script language="javascript" >
+		function tambah(){
+			var bil1=parseFloat(document.kalkulator.bil1.value);
+			var bil2=parseFloat(document.kalkulator.bil1.value);
+			if (isNaN (bil1) == false && isNaN(bil2) == false){
+				var hasil=bil1+bil2;
+				document.kalkulator.hasil.value=hasil;
+			}
+			else{
+				alert("Hanya Masukkan Angka!")
+			}
+		}
+		function kurang(){
+			var bil1=parseFloat(document.kalkulator.bil1.value);
+			var bil2=parseFloat(document.kalkulator.bil1.value);
+			if (isNaN (bil1) == false && isNaN(bil2) == false){
+				var hasil=bil1-bil2;
+				document.kalkulator.hasil.value=hasil;
+			}
+			else{
+				alert("Hanya Masukkan Angka!")
+			}
+		}
+		function kali(){
+			var bil1=parseFloat(document.kalkulator.bil1.value);
+			var bil2=parseFloat(document.kalkulator.bil1.value);
+			if (isNaN (bil1) == false && isNaN(bil2) == false){
+				var hasil=bil1*bil2;
+				document.kalkulator.hasil.value=hasil;
+			}
+			else{
+				alert("Hanya Masukkan Angka!")
+			}
+		}
+		function bagi(){
+			var bil1=parseFloat(document.kalkulator.bil1.value);
+			var bil2=parseFloat(document.kalkulator.bil1.value);
+			if (isNaN (bil1) == false && isNaN(bil2) == false){
+				var hasil=bil1/bil2;
+				document.kalkulator.hasil.value=hasil;
+			}
+			else{
+				alert("Hanya Masukkan Angka!")
+			}		}
+	</script>
+</head>
+<body>
+	<form name="kalkulator">
+		<p><input type="text" name="bil1"></p>
+		<p><input type="text" name="bil2"></p>
+
+		<input type="button" value="+" onclick="tambah()">
+		<input type="button" value="-" onclick="kurang()">
+		<input type="button" value="*" onclick="kali()">
+		<input type="button" value="/" onclick="bagi()">
+		<p><input type="text" name="hasil"></p>
+		
+	</form>
+</body>
+</html>
