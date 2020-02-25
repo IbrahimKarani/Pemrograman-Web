@@ -1,0 +1,65 @@
+header{
+	background-image:url(gunung2.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px transparent;
+	border-radius: 5px;
+	transition: 0.6s ease;
+	margin-top: 10px;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+ul li.active a{
+	background-color: #fff;
+	color: #000
+	}
+.title {
+	position: absolute;
+	text-shadow: 5px 5px cyan;
+	top: 10%;
+	left: 34%;
+	transform: translate(-50%;-50%);
+}
+.title h1{
+	font-family: sans-serif;
+	color: #fff;
+	font-size: 60px;
+}
+.tabel{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	height: 50%;
+	transform: translate(-50%,-50%);
+}
+th{
+	top: 20%;
+	left: 38%;
+	color: #ffffff; background-color: #336699; border-width: 1px;
+	border-style: solid; border-color: transparent; font-size: 9pt;
+	top: 20%;
+}
+td{
+
+	color: black;
+	background-color: #E6E6FA; border-width: 1px;
+	border-style: solid; border-color: #336699; font-size: 9pt; 
+}
