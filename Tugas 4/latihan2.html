@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 2</title>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$("div").dblclick(function(){
+		$(this).css({background:"red"});	
+	});
+		$("div").click(function(){
+		$(this).css({background : "yellow"});	
+	});
+	});	
+	</script>
+	<style type="text/css">
+		div{
+			background: yellow;
+			width: 60px;
+			height: 60px;
+			float: left;
+			margin: 10px;
+			cursor: pointer;
+			
+		}
+	</style>
+</head>
+<body>
+<p>Klik 2 kali</p>
+<div>
+</div>
+<dir></dir>
+<div></div>
+<div></div>
+</body>
+</html>

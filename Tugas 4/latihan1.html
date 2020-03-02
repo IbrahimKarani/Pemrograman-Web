@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 1</title>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+		$("#hide1").click(function(){
+		$("#box1").fadeOut();
+		})
+  		$("#show1").click(function(){
+    	$("#box1").show();
+    	})	
+  		$("#hide2").click(function(){
+    	$("#box2").fadeOut();	
+    	})
+    	$("#show2").click(function(){
+    	$("#box2").show();
+    	})
+    	$("#hide3").click(function(){
+    	$("#box3").fadeOut();
+    	})
+    	$("#show3").click(function(){
+    	$("#box3").show();
+    	})
+    });
+	</script>
+	<style type="text/css">
+		#box1{
+			width: 300px;
+			height: 300px;
+			background-image: url(hp.png);	
+			background-attachment: cover;
+		}
+		#box2{
+			width: 300px;
+			height: 300px;
+			background-image: url(atm.png);
+			background-attachment: cover;
+		}
+		#box3{
+			width: 300px;
+			height: 300px;
+			background-image: url(handphone.png);
+			background-attachment: cover;
+		}
+	</style>
+</head>
+<body>
+<button id="hide1">Sembunyikan</button>
+<button id="show1">Tampilkan</button>
+<div id="box1"></div>
+<br>
+<button id="hide2">Sembunyikan</button>
+<button id="show2">Tampilkan</button>
+<div id="box2"></div>
+<br>
+<button id="hide3">Sembunyikan</button>
+<button id="show3">Tampilkan</button>
+<div id="box3"></div>
+</body>
+</html>

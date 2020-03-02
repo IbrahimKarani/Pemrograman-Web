@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 3</title>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$(".tombol1").click(function(){
+		$(".box").fadeOut("slow");	
+		})
+		$(".tombol2").click(function(){
+		$(".box").fadeIn("slow");
+		})
+		$(".tombol3").click(function(){
+		$(".box").fadeTo("slow",0.3);
+		})
+		});
+	</script>
+	<style type="text/css">
+		.box{
+			background: yellow;
+			width: 500px;
+			height: 500px;
+			margin: 10px;
+		}
+		.tombol1{
+			margin: 10px;
+		}
+		.tombol2{
+			margin: 10px;
+		}
+		.tombol3{
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="box"></div>
+	<br>
+	<br>
+	<button class="tombol1">FadeOut</button>
+	<button class="tombol2">FadeIn</button>
+	<button class="tombol3">FadeTo</button>
+
+</body>
+</html>
