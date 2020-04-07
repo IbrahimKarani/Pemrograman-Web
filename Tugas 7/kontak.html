@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Form Kontak </title>
+</head>
+<body>
+	<header>
+	<form action="simpan_kontak.php" method="POST">
+	<table>	
+		<tr>
+			<td>Nama </td> 
+			<td><input type="Text" name="nama"></td>
+		</tr>
+		<tr>
+			<td>Jenis Kelamin </td> 
+			<td><input type="radio" name="jkel" value="L"> Laki-laki
+			<input type="radio" name="jkel" value="P"> Perempuan</td>
+		</tr>
+		<tr>
+			<td>Email </td>
+			<td><input type="Text" name="email"></td>	
+		</tr>
+		<tr>
+			<td>Alamat</td> 
+			<td><input type="Text" name="alamat"></td>
+		</tr>
+		<tr>	
+			<td>Kota 
+				<td><select name="kota">
+				<option value="sby"> Surabaya </option>
+				<option value="jkt"> Jakarta </option>
+				<option value="man"> Manchester </option>
+				<option value="bdg"> Bandung </option>
+				</select></td>
+			</td>
+		</tr>
+		<tr>
+		<td>Pesan </td>
+		<td><textarea name="pesan" cols="45" rows="5" align="center">
+		</textarea></td>				
+		<td><input type="submit" name="submit"></td>
+		</tr>
+	</table>		
+	</form>
+	<p><a href="login.php">Lihat data kontak</a>
+		<br>
+		Data kontak hanya untuk admin</p>
+	</header>
+</body>
+</html>
